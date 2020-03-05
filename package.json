@@ -1,0 +1,11 @@
+{
+  "name": "list-fam",
+  "version": "1.0.0",
+  "description": "a grocery list to share with friends and family",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine"
+  },
+  "author": "Layne",
+  "license": "ISC"
+}
