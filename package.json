@@ -4,8 +4,18 @@
   "description": "a grocery list to share with friends and family",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test&& jasmine"
+    "test": "export NODE_ENV=test&& jasmine",
+    "start": "node src/server.js"
   },
   "author": "Layne",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.0.0",
+    "request": "^2.83.0"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
 }
