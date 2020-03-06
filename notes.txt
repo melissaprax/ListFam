@@ -1,0 +1,58 @@
+!!!!!!!! LEFT OFFF !!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+********* POSTGRES INSTRUCTIONS  ****************
+db names - listfam-dev and listfam-test
+
+psql -U postgres (!to get into postgres)
+\l to list db
+\c to connect to a db - ***mint-century(this is the dev) and mint-century-test***
+\dt to list table names
+
+
+$ sequelize db:migrate:undo:all && sequelize db:migrate:undo:all --env test
+$ sequelize db:migrate && sequelize db:migrate --env test
+
+*****************************************************
+
+
+
+
+**********  merging  branches   ************
+
+follow this link https://developers.sap.com/tutorials/webide-github-merge-pull-request.html and then do
+Laynes-MacBook-Pro:mint-century laynetaylor$ git pull origin master after merging to hand in assignment
+
+*********************************************
+
+
+********from index, page features********
+<!-- Page Features -->
+      <section class="row text-center">
+        <section class="col-lg-4">
+          <h4 class="card-title">Post</h4>
+          <p class="card-text">
+            Share your thoughts about subjects that are important to you.
+          </p>
+        </section>
+
+        <section class="col-lg-4">
+          <h4 class="card-title">Comment</h4>
+          <p class="card-text">
+            Your opinion counts! But you have to make yourself heard first!
+          </p>
+        </section>
+
+        <section class="col-lg-4">
+          <h4 class="card-title">Stay Informed</h4>
+          <p class="card-text">
+            See the most active topics as well as trending subjects every day!
+          </p>
+        </section>
+      </section>
+***************
