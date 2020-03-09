@@ -8,6 +8,7 @@
 
 ********* POSTGRES INSTRUCTIONS  ****************
 db names - listfam-dev and listfam-test
+listfam2-dev and listfam2-test
 
 psql -U postgres (!to get into postgres)
 \l to list db
