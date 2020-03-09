@@ -11,7 +11,7 @@ db names - listfam-dev and listfam-test
 
 psql -U postgres (!to get into postgres)
 \l to list db
-\c to connect to a db - ***mint-century(this is the dev) and mint-century-test***
+\c to connect to a db 
 \dt to list table names
 
 

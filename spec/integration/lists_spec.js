@@ -26,4 +26,35 @@ describe("routes : lists", () => {
       });
     });
   });
+  describe("GET /lists/new", () => {
+    it("should render a new list form", done => {
+      request.get(`${base}new`, (err, res, body) => {
+        expect(err).toBeNull();
+        expect(body).toContain("New List");
+        done();
+      });
+    });
+  });
+  describe("POST /lists/create", () => {
+    const options = {
+      url: `${base}create`,
+      form: {
+        title: "my first grocery list"
+      }
+    };
+    it("should create a new list and redirect", done => {
+      request.post(options, (err, res, body) => {
+        List.findOne({ where: { title: "my first grocery list" } })
+          .then(list => {
+            expect(res.statusCode).toBe(303);
+            expect(list.title).toBe("my first grocery list");
+            done();
+          })
+          .catch(err => {
+            console.log(err);
+            done();
+          });
+      });
+    });
+  });
 });
